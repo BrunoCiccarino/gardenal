@@ -1,6 +1,6 @@
 # 🧛🏻‍♂️ Gardenal
 
-<img src="./img/gif.mp4">
+<img src="./img/gif.gif">
 
 Gardenal is a plugin for Vim that allows you to create keyboard shortcuts to change themes, easy to install and simple to configure.
 
