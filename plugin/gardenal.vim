@@ -3,7 +3,7 @@ function! ThemeSwitcher(themes, index)
 
     " Check if the index is valid
     if a:index < 1 || a:index > len(themes)
-        echo "Índice inválido. Escolha um número entre 1 e " . len(themes)
+        echo "Invalid index. Choose a number between 1 and" . len(themes)
         return
     endif
 
@@ -18,7 +18,7 @@ function! ThemeSwitcher(themes, index)
 
     " Apply the theme
     execute 'colorscheme ' . theme
-    echo "Tema " . theme . " aplicado."
+    echo "Theme " . theme . " applied."
 endfunction
 
 function! MapThemeSwitcherKeys(themes)
