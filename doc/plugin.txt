@@ -1,0 +1,34 @@
+Gardenal Plugin Documentation
+
+Introduction
+Gardenal is a plugin for Vim that makes it easy to switch between themes through customizable keyboard shortcuts. Based on the "hydra" concept, the plugin allows users to configure a sequence of themes and switch between them quickly and efficiently, improving the visual customization experience in the editor.
+
+Objective
+The main objective of Gardenal is to provide a simple and agile way to switch between themes in Vim, without the need for complex manual commands. It allows users to configure a list of preferred themes and map keyboard shortcuts to switch between them.
+
+Features
+1. Quick Switch between Themes
+Gardenal allows users to quickly switch between different themes with a simple key press. You can pre-configure a list of themes in the configuration file and define which keys you want to use to switch between them.
+
+2. Keyboard Shortcuts Configuration
+Flexibility is one of Gardenal’s hallmarks. Users can define their own keyboard shortcuts to switch between configured themes. This allows each developer to customize the way they interact with the editor, adapting the plugin to their workflow.
+
+3. Ease of Use
+With simple commands, Gardenal eliminates the need to remember and type long commands to change the theme. All that is required is setup once and switching themes becomes an instant task.
+
+4. Extensible for Future Functionality
+Although currently focused on theme exchange, Gardenal has the potential to be expanded with other features, such as project management, in the future.
+
+Installation
+Currently, to install, just clone the github repository and run the installer, then just add lines like these to your .vimrc configuration file:
+
+source ~/.vim/plugins/gardenal.vim
+
+let themes = ['desert', 'gruvbox', 'monokai']
+call MapThemeSwitcherKeys(themes)
+nnoremap <silent> 1 :call ThemeSwitcher(themes, 1)<CR>
+nnoremap <silent> 2 :call ThemeSwitcher(themes, 2)<CR>
+nnoremap <silent> 3 :call ThemeSwitcher(themes, 3)<CR>
+
+Conclusion
+Gardenal is a simple yet powerful tool for those who want to manage themes in Vim in an efficient and customizable way. With the ability to define your own keyboard shortcuts, it easily adapts to users' individual needs. And, with potential for future expansion, Gardenal could evolve into an even more comprehensive productivity assistant.
