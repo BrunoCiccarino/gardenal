@@ -30,5 +30,21 @@ nnoremap <silent> 1 :call ThemeSwitcher(themes, 1)<CR>
 nnoremap <silent> 2 :call ThemeSwitcher(themes, 2)<CR>
 nnoremap <silent> 3 :call ThemeSwitcher(themes, 3)<CR>
 
+But you can also install through package managers like Vim-Plug, Vundle, Pathogen. To install using these package managers, you will have to follow these steps:
+
+To install via vim-plug, we can do it this way, add the following statement to your configuration file:
+
+Plug 'BrunoCiccarino/gardenal'
+Then press esc to exit insertion mode and run :PlugInstall
+
+To install via vundle it's very similar, you just need to add the following instructions to your configuration file:
+
+Plugin 'BrunoCiccarino/gardenal'
+Then you repeat the process by pressing esc and typing :PluginInstall
+
+In Pathogen it requires you to clone my repository to a specific directory, for vim you clone to the ~/.vim/bundle directory in neovim you clone to the ~/.config/nvim/bundle directory . As in this example:
+
+git clone https://github.com/BrunoCiccarino/gardenal  ~/.vim/bundle/gardenal
+
 Conclusion
 Gardenal is a simple yet powerful tool for those who want to manage themes in Vim in an efficient and customizable way. With the ability to define your own keyboard shortcuts, it easily adapts to users' individual needs. And, with potential for future expansion, Gardenal could evolve into an even more comprehensive productivity assistant.
