@@ -9,15 +9,13 @@ if ($editorChoice -eq "nvim") {
     exit
 }
 
-
 if (!(Test-Path $configPath)) { New-Item -ItemType Directory -Path $configPath | Out-Null }
-
 
 $localPluginPath = ".\plugin"
 
 Get-ChildItem -Path $localPluginPath -File | ForEach-Object {
-    Move-Item -Path $_.FullName -Destination $configPath -Force
+    Copy-Item -Path $_.FullName -Destination $configPath -Force
 }
 
-Write-Host "ThemeSwitcher installed successfully!"
+Write-Host "Gardenal installed successfully!"
 
